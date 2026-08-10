@@ -1,4 +1,4 @@
-h1 { color: rgb(231, 202, 127) !important; }
+h1 { color: rgb(211, 157, 96) !important; }
 /* ===== 高级配色（仅颜色，不改字体） ===== */
 :root {
   /* 主色：香槟加深，更有存在感 */
@@ -56,8 +56,9 @@ h1 { color: rgb(231, 202, 127) !important; }
     background-color: #C4A07A !important; 
 }
 /* 首页标题（仅颜色渐变） */
+/* ===== 首页大标题渐变 ===== */
 .VPHero .name {
-  background: linear-gradient(135deg, #E0CDB8 0%, #D4BEA8 60%, #DDBEA8 100%) !important;
+  background: linear-gradient(135deg, #D4B89C, #C4A07A, #B89478) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
@@ -154,4 +155,7 @@ a:not(.VPButton):hover { color: #DDBEA8 !important; }
   background: #EDE2D6 !important;
   border-color: #C4A07A !important;
   box-shadow: 0 8px 24px rgba(180,150,120,0.2) !important;
+}
+.VPHero .VPFeatures .item {
+  background: #F5EDE4 !important;
 }

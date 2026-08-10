@@ -17,8 +17,9 @@ export default defineConfig({
 
   // 3. 主题配置（所有视觉和交互都在这里）
   themeConfig: {
+    
     // 导航栏
-    nav: [
+  nav: [
       { text: '首页', link: '/' },
       { text: '学习笔记', link: '/markdown-examples' },
       { text: '关于我', link: '/about' }
@@ -46,6 +47,12 @@ export default defineConfig({
     footer: {
       message: '基于 VitePress 构建 | 认知的世界，即世界的边界',
       copyright: '© 2026 Athena的学习笔记'
-    }
+    },
+search: {
+  provider: 'local'
+},
+lastUpdated: {
+  text: '最后更新于'
+}
   }
 })
