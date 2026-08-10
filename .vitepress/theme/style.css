@@ -57,12 +57,14 @@ h1 { color: rgb(211, 157, 96) !important; }
 }
 /* 首页标题（仅颜色渐变） */
 /* ===== 首页大标题渐变 ===== */
+/* ===== 首页大标题渐变（恢复） ===== */
 .VPHero .name {
-  background: linear-gradient(135deg, #D4B89C, #C4A07A, #B89478) !important;
+  background: linear-gradient(135deg, #E0CDB8, #D4B89C, #C4A07A) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
 }
+
 .VPHero .text { color: #3D3A33 !important; }
 .VPHero .tagline { color: #6B6558 !important; }
 
