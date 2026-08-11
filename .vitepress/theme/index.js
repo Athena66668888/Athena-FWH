@@ -1,3 +1,8 @@
 import './style.css'
 import DefaultTheme from 'vitepress/theme'
-export default DefaultTheme
+import NotFound from './NotFound.vue'
+
+export default {
+  extends: DefaultTheme,
+  NotFound: NotFound
+}
