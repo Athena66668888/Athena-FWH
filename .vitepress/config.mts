@@ -5,7 +5,7 @@ export default defineConfig({
    base: '/Athena-FWH/',
    
   title: 'Athena的学习笔记',
-  description: '记录思考，沉淀技术',
+  description: '认知的边界即世界的边界',
 
   head: [
     ['link', { rel: 'icon', href: '/favicon.png' }]
