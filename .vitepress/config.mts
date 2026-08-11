@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
 
-   base: '/Athena-FWH/',
+  base: '/Athena-FWH/',
    
   title: 'Athena的学习笔记',
   description: '认知的边界即世界的边界',
