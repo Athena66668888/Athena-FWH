@@ -1,0 +1,24 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Athena66668888/Athena-FWH.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Athena66668888/Athena-FWH/issues"
+  },
+  "homepage": "https://github.com/Athena66668888/Athena-FWH#readme",
+  "dependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
