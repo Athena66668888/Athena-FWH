@@ -1,0 +1,1 @@
+window.__VP_HASH_MAP__=JSON.parse("{}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"en-US\",\"dir\":\"ltr\",\"title\":\"VitePress\",\"description\":\"A VitePress site\",\"base\":\"/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":true,\"themeConfig\":{},\"locales\":{},\"cleanUrls\":false,\"additionalConfig\":{}}");

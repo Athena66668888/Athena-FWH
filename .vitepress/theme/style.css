@@ -1,0 +1,163 @@
+h1 { color: rgb(211, 157, 96) !important; }
+/* ===== 高级配色（仅颜色，不改字体） ===== */
+:root {
+  /* 主色：香槟加深，更有存在感 */
+  --vp-c-brand-1: #D4B89C;
+  --vp-c-brand-2: #E0CDB8;
+  --vp-c-brand-3: #C4A688;
+  --vp-c-brand-soft: #F5EDE4;
+  --vp-c-brand-bg: #F8F0E8;
+
+  /* 点缀：玫瑰金加深，更温暖 */
+  --vp-c-accent-1: #D4A88C;
+  --vp-c-accent-2: #E0C0AC;
+
+  /* 背景：保持暖白，但稍微暗一点，增加与文字的对比 */
+  --vp-c-bg: #F8F0E8;
+  --vp-c-bg-soft: #F5EDE4;
+  --vp-c-bg-alt: #EDE2D6;
+
+  /* 文字：明显加深，确保可读性 */
+  --vp-c-text-1: #2C2922;   /* 深灰褐，接近黑但柔和 */
+  --vp-c-text-2: #5A5548;   /* 中深灰褐 */
+  --vp-c-text-3: #8A8475;   /* 浅灰褐，依然清晰 */
+}
+
+/* 导航 */
+/* ===== 导航栏（深色香槟版） ===== */
+.VPNavBar {
+    background-color: rgba(252, 248, 242, 0.85) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(160, 140, 120, 0.3) !important;
+}
+
+/* 左上角网站名 */
+.VPNavBar .title { 
+    color: #C4A07A !important; 
+}
+
+/* 导航链接（默认状态）—— 这是“首页”“学习笔记”“关于我”默认颜色 */
+.VPNavBar .link { 
+    color: #A67B5B !important;   /* 深香槟棕，白天清晰可见 */
+}
+
+/* 导航链接（鼠标悬停时） */
+.VPNavBar .link:hover { 
+    color: #8C6548 !important;   /* 更深，像深烘咖啡色 */
+}
+
+/* 导航链接（当前页面激活时） */
+.VPNavBar .link.active { 
+    color: #8C6548 !important;   /* 和悬停一致，表示你在该页面 */
+}
+
+/* 激活页面的下划线 */
+.VPNavBar .link.active::after { 
+    background-color: #C4A07A !important; 
+}
+/* 首页标题（仅颜色渐变） */
+/* ===== 首页大标题渐变 ===== */
+/* ===== 首页大标题渐变（恢复） ===== */
+.VPHero .name {
+  background: linear-gradient(135deg, #E0CDB8, #D4B89C, #C4A07A) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+.VPHero .text { color: #3D3A33 !important; }
+.VPHero .tagline { color: #6B6558 !important; }
+
+/* 按钮 */
+.VPButton.brand {
+  background-color: #E0CDB8 !important;
+  border-color: #E0CDB8 !important;
+  color: #1A1A1A !important;
+  box-shadow: 0 4px 14px rgba(224, 205, 184, 0.25);
+}
+.VPButton.brand:hover {
+  background-color: #DDBEA8 !important;
+  border-color: #DDBEA8 !important;
+  box-shadow: 0 8px 28px rgba(221, 190, 168, 0.3);
+}
+.VPButton.alt {
+  color: #E0CDB8 !important;
+  border-color: #E0CDB8 !important;
+}
+.VPButton.alt:hover {
+  background-color: #F9F4EE !important;
+  border-color: #DDBEA8 !important;
+  color: #D4BEA8 !important;
+}
+
+/* 链接 */
+a:not(.VPButton) { color: #E0CDB8 !important; }
+a:not(.VPButton):hover { color: #DDBEA8 !important; }
+
+/* 侧边栏 */
+.VPSidebar {
+  background-color: #FCF8F2 !important;
+  border-right: 1px solid rgba(224, 205, 184, 0.15);
+}
+.VPSidebar .link:hover,
+.VPSidebar .link.active { color: #E0CDB8 !important; }
+
+/* 页脚 */
+.VPFooter {
+  background-color: #F9F4EE !important;
+  border-top: 1px solid rgba(224, 205, 184, 0.15);
+}
+.VPFooter .message,
+.VPFooter .copyright { color: #6B6558 !important; }
+
+/* 滚动条 */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #FCF8F2; }
+::-webkit-scrollbar-thumb { background: #E0CDB8; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #DDBEA8; }
+
+/* 卡片（只改背景、边框、阴影，不动字体） */
+.VPHero .VPFeatures .item {
+  background: #FCF8F2 !important;
+  border: 1px solid rgba(224, 205, 184, 0.15) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 4px 20px rgba(224, 205, 184, 0.06) !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.VPHero .VPFeatures .item:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 20px 40px -8px rgba(221, 190, 168, 0.15) !important;
+  border-color: rgba(221, 190, 168, 0.2) !important;
+  background: #FCF8F2 !important;
+}
+.VPHero .VPFeatures .icon { color: #E0CDB8 !important; }
+.VPHero .VPFeatures .item:hover .icon { color: #DDBEA8 !important; }
+.VPHero .VPFeatures .title { color: #3D3A33 !important; }
+.VPHero .VPFeatures .details { color: #6B6558 !important; }
+/* ===== 卡片颜色自定义（深香槟版） ===== */
+.VPHero .VPFeatures .item {
+  background: #F5EDE4 !important;
+  border: 1px solid #D4B89C !important;
+  border-radius: 20px !important;
+}
+
+.VPHero .VPFeatures .title {
+  color: #2C2922 !important;
+}
+
+.VPHero .VPFeatures .details {
+  color: #5A5548 !important;
+}
+
+.VPHero .VPFeatures .icon {
+  color: #D4B89C !important;
+}
+
+.VPHero .VPFeatures .item:hover {
+  background: #EDE2D6 !important;
+  border-color: #C4A07A !important;
+  box-shadow: 0 8px 24px rgba(180,150,120,0.2) !important;
+}
+.VPHero .VPFeatures .item {
+  background: #F5EDE4 !important;
+}
